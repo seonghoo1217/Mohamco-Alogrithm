@@ -8,8 +8,8 @@ function solution(arr) {
     let idx = answer.indexOf(liar - answer[i]);
 
     if (idx !== -1) {
-      answer.splice(idx, 1); // splice(제거할 인덱스, 제거할 개수)
-      answer.splice(i, 1); // splice(추가할 인덱스, 추가할 개수)
+      answer.splice(idx, 1);
+      answer.splice(i, 1);
 
       break;
     }
