@@ -1,7 +1,13 @@
 // elapsed time: 01:42:39
 
+const fs = require("fs");
+let input = fs.readFileSync("./input.txt").toString().split("\n");
+let arr = input.map((i) => Number(i));
+
+console.log(solution(arr));
+
 function solution(arr) {
-  let answer = arr;
+  let answer = [...arr];
   let liar = answer.reduce((a, b) => a + b) - 100;
 
   for (let i = 0; i < answer.length; i++) {
@@ -17,6 +23,3 @@ function solution(arr) {
 
   return answer;
 }
-
-let data = [8, 6, 5, 1, 37, 30, 28, 22, 36];
-console.log(solution(data));
