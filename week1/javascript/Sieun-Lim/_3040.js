@@ -7,7 +7,7 @@ let arr = input.map((i) => Number(i));
 console.log(solution(arr));
 
 function solution(arr) {
-  let answer = [...arr];
+  let answer = arr;
   let liar = answer.reduce((a, b) => a + b) - 100;
 
   for (let i = 0; i < answer.length; i++) {
