@@ -1,6 +1,7 @@
+// 56:09:12
 let fs = require("fs");
 let input = fs
-  .readFileSync("./test.txt")
+  .readFileSync("./_5576_input.txt")
   .toString()
   .trim()
   .split("\n")
