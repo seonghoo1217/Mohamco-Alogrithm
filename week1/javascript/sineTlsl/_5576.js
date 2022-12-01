@@ -19,8 +19,6 @@ function solution(input) {
         let tmp = W[i];
         W[i] = W[j];
         W[j] = tmp;
-        console.log("i = ", i, "j = ", j);
-        console.log("W === ", W);
       }
       if (K[i] > K[j]) {
         let tmp = K[i];
