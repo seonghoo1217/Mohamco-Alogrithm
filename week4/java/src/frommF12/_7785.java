@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 import java.util.stream.Collectors;
 
+// 20:17
 public class _7785 {
 
     public static void main(String[] args) throws IOException {
