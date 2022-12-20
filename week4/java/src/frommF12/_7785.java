@@ -25,4 +25,14 @@ public class _7785 {
             if (enter.equals("leave")) {
                 set.remove(name);
                 continue;
+            }
+            set.add(name);
+        }
 
+        List<String> result = set.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+
+        for (String s : result) {
+            System.out.println(s);
+        }
+    }
+}
