@@ -2,18 +2,19 @@
 function solution(data) {
   const input = data.split("\n");
   const N = Number(input.splice(0, 1).join(""));
-  let answer = [];
+  let set = new Set();
   for (let i = 0; i < N; i++) {
     const [name, state] = input[i].split(" ");
     if (state === "enter") {
-      answer.push(name);
+      set.add(name);
     }
     if (state === "leave") {
-      const index = answer.indexOf(name);
-      answer.splice(index, 1);
+      set.delete(name);
     }
   }
-  return answer.sort((a, b) => a - b).join("\n");
+  let answer = [...set].sort();
+  answer.reverse();
+  return answer.join("\n");
 }
 
 const case1 = `4
