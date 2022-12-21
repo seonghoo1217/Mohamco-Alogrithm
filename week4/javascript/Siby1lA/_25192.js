@@ -2,15 +2,15 @@
 function solution(data) {
   const CHAT_DATA = data.split("\n");
   const CHAT_SIZE = Number(CHAT_DATA.splice(0, 1).join(""));
-  let duplicateList = [];
+  let duplicateList = new Set();
   let count = 0;
   for (let i = 1; i < CHAT_SIZE; i++) {
-    if (!duplicateList.includes(CHAT_DATA[i])) {
-      duplicateList.push(CHAT_DATA[i]);
+    if (!duplicateList.has(CHAT_DATA[i])) {
+      duplicateList.add(CHAT_DATA[i]);
       if (CHAT_DATA[i] !== "ENTER") {
         count++;
       } else {
-        duplicateList = [];
+        duplicateList.clear();
       }
     }
   }
