@@ -31,7 +31,6 @@ public class _14235 {
                     result.add(values.poll());
             }
         }
-
         for (int i = 0; i < result.size(); i++) {
             System.out.println(result.get(i));
         }
