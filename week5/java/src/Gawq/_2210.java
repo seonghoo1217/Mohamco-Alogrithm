@@ -32,7 +32,6 @@ public class _2210 {
             }
         }
         System.out.println(list.size());
-
     }
 
     public static void DFS(int x, int y, int depth, String s) {
