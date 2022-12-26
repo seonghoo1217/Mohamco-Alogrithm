@@ -16,7 +16,6 @@ public class _2210 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = 5;
-
         list = new HashSet<>();
         arr = new int[N][N];
         for (int i = 0; i < N; i++) {
