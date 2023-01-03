@@ -1,4 +1,4 @@
-//00:26:08
+//01:14:34
 function check_winner(sang, frend) {
   if (sang === "S") {
     if (frend === "S") return 1;
