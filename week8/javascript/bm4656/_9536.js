@@ -1,4 +1,4 @@
-//01:34:30
+//00:30:36
 function solution(data) {
   let [T, ...input] = data.toString().trim().split('\n');
   let answer = '';
